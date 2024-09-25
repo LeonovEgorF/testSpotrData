@@ -1,0 +1,87 @@
+@import "../../style/vars.scss";
+
+.container_list-country {
+  margin-bottom: 20px;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $colorBg;
+    height: 60px;
+    border-radius: 2px 2px 0 0;
+    padding: 0 15px;
+    border-radius: 2px 2px 0 0;
+
+    .func_title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    .arrow {
+      cursor: pointer;
+      img {
+        width: 17px;
+        height: 17px;
+        color: white;
+        transition: 500ms;
+      }
+    }
+  }
+  .tableTournaments {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox_all {
+  display: none;
+}
+
+.checkbox-label_all {
+  position: relative;
+  padding-right: 40px;
+  user-select: none;
+  line-height: 20px;
+  color: white;
+}
+
+.checkbox-label_all::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: inherit;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+
+.custom-checkbox_all:checked + .checkbox-label_all::before {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.custom-checkbox_all:checked + .checkbox-label_all::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  opacity: 1;
+  transition: opacity 0.1s;
+}

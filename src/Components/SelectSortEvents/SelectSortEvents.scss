@@ -1,0 +1,26 @@
+@import "../../style/vars.scss";
+.header_sort_events {
+  padding-right: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorBg;
+  color: white;
+  .text {
+    padding: 25px 15px;
+    height: 100%;
+  }
+  .arrow_hidden {
+    cursor: pointer;
+    img {
+      width: 16px;
+      height: 16px;
+      transition: 500ms;
+    }
+    .openEvents {
+      transform: rotate(180deg);
+      transition: 500ms;
+    }
+  }
+}

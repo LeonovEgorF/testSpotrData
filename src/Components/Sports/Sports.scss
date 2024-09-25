@@ -1,0 +1,43 @@
+@import "../../style/vars.scss";
+.container_sports {
+  height: 80vh;
+  overflow: auto;
+
+  .wr_title {
+    padding: 0 10px;
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 21px;
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    height: 45px;
+    margin-right: 10px;
+
+    .title {
+      font-weight: 500;
+      color: $colorText;
+    }
+  }
+  .list_sports {
+    padding-right: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+    transition: background 0.3s;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 20px;
+    background: rgba(136, 136, 136, 0);
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+  }
+}

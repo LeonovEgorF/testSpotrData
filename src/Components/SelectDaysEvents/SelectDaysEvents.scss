@@ -1,0 +1,17 @@
+@import "../../style/vars.scss";
+.header_days_events {
+  background-color: $colorGreen;
+  padding: 0 10px;
+  height: 40px;
+  color: white;
+  display: grid;
+  grid-template-columns:
+    5rem 1fr 3.4375rem 3.4375rem 3.4375rem 3.4375rem
+    3.4375rem 3.4375rem 3.4375rem 3.4375rem 3.4375rem;
+  align-items: center;
+  column-gap: 4px;
+  span {
+    display: flex;
+    justify-content: center;
+  }
+}

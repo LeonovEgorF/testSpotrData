@@ -1,0 +1,27 @@
+@import "../../style/vars.scss";
+.container_activeSport {
+  padding: 0 10px;
+  height: 79vh;
+  overflow: auto;
+  .listActiveSport {
+    list-style: none;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+    transition: background 0.3s;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 20px;
+    background: rgba(136, 136, 136, 0);
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../style/vars.scss";
+.homeEventsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorText;
+  text-transform: uppercase;
+}

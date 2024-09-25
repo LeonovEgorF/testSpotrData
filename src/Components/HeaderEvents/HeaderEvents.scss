@@ -1,0 +1,66 @@
+@import "../../style/vars.scss";
+.header_activeSport {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  .back_btn {
+    display: flex;
+    align-items: center;
+    color: $colorText;
+    cursor: pointer;
+    img {
+      width: 16px;
+      height: 16px;
+      transform: rotate(-90deg);
+      margin-right: 15px;
+    }
+  }
+  .wrapper_btn {
+    .retired {
+      padding: 0 36px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: capitalize;
+      border-radius: 3px;
+      background-color: $colorBg;
+      border: none;
+      height: 45px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .coupon {
+      background: #00a83b;
+      padding: 0 36px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: capitalize;
+      border-radius: 3px;
+      border: none;
+      height: 45px;
+      cursor: pointer;
+      span {
+        margin-left: 10px;
+      }
+    }
+    button[disabled] {
+      opacity: 0.8;
+      pointer-events: none;
+    }
+  }
+  img {
+    transform: rotate(-90deg);
+    transition: 500ms;
+  }
+  .closeAllTour {
+    transition: 500ms;
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../style/vars.scss";
+.container_item-cart {
+  font-family: $font;
+  display: flex;
+  border: 1px solid #e3e3e3;
+  .info_item {
+    padding: 12px 8px 12px 12px;
+    flex-basis: 90%;
+    border-right: 1px solid #e3e3e3;
+    .title_item {
+      min-height: 24px;
+      color: #193b52;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    .descr_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 8px;
+      background: #e5e7f4;
+      .wr_game {
+        .type_game {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 5px;
+        }
+        .stake_game {
+          color: #102532;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+      .factor {
+        color: #102532;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .remove_item {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    :hover {
+      color: #ff0f00;
+      cursor: pointer;
+    }
+  }
+}

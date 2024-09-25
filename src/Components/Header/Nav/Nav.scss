@@ -1,0 +1,121 @@
+.container_nav {
+  background-color: #eaecf4;
+  padding-top: 4px;
+  .wrap_nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    .content {
+      display: flex;
+      .nav {
+        display: flex;
+        margin-right: 20px;
+        .link {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          padding: 8px;
+          background-color: transparent;
+          transition: background-color 0.1s linear;
+          img {
+            flex-shrink: 0;
+            margin-right: 4px;
+          }
+          p {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            background: linear-gradient(90deg, #030021 8.78%, #3d195b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+          }
+        }
+        .link:hover {
+          background-color: #dadeec;
+        }
+      }
+      .nav::before {
+        width: 1px;
+        height: 40%;
+        margin: 5px;
+        background-color: #d7dae7;
+        content: "";
+        margin-top: 10px;
+      }
+      .nav::after {
+        width: 1px;
+        height: 40%;
+        margin: 5px;
+        background-color: #d7dae7;
+        content: "";
+        margin-top: 10px;
+      }
+      .select_lang {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .select_default {
+          padding: 5px 20px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          ._img {
+            margin-right: 5px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          p {
+            margin-right: 2px;
+            color: #a9afc6;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            img {
+              width: 8px;
+              height: 8px;
+              margin-left: 5px;
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .wrapper_options {
+          background-color: #eaecf4;
+          position: absolute;
+          bottom: -68px;
+
+          border-radius: 0 0 10px 10px;
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 7px;
+          }
+          .option {
+            display: flex;
+            transition: 200ms;
+            padding: 5px 20px;
+            cursor: pointer;
+            p {
+              margin-right: 2px;
+              color: #a9afc6;
+              font-weight: 500;
+              font-size: 10px;
+              line-height: 12px;
+            }
+          }
+          .option:hover {
+            background-color: #dadeec;
+          }
+          :last-child {
+            border-radius: 0 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}

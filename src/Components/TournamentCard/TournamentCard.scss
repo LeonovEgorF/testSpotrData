@@ -1,0 +1,81 @@
+.tournament_item {
+  flex-basis: 50%;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  cursor: pointer;
+  .tournament_check {
+    .tourCheck {
+      margin-right: 10px;
+    }
+    .text {
+      color: #142e3f;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+      input {
+        width: 25px;
+        height: 25px;
+        background: #00a83b;
+        border-color: #00a83b;
+      }
+    }
+  }
+}
+.custom-checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 20px;
+}
+
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: inherit;
+  border: 2px solid #142e3f;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: background-color 0.1s, border-color 0.1s;
+}
+.custom-checkbox:checked + .checkbox-label::before {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+.checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 40%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+.custom-checkbox:checked + .checkbox-label::after {
+  opacity: 1;
+}

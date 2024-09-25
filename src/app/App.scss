@@ -1,0 +1,47 @@
+.container_app {
+  min-height: 83vh;
+  display: flex;
+  align-items: stretch;
+  column-gap: 10px;
+  .container_sportsGame {
+    flex-basis: 25%;
+  }
+  .container_events {
+    max-width: 50%;
+    width: 100%;
+
+    padding: 10px;
+    flex-grow: 1;
+    height: 80vh;
+  }
+  .cart {
+    flex-basis: 25%;
+    height: 80vh;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 8px;
+      background: transparent;
+      transition: background 0.3s;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 20px;
+      background: rgba(136, 136, 136, 0);
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+    }
+  }
+}
+.container-spinner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

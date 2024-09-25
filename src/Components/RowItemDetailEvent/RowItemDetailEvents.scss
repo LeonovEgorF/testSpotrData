@@ -1,0 +1,26 @@
+.rowItem-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  align-items: center;
+  padding: 0 20px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  height: 30px;
+  cursor: pointer;
+  transition: 300ms;
+  border: 1px solid white;
+}
+.rowItem-container:hover {
+  color: #fff;
+  background: #00a83b;
+  border: 1px solid white;
+}
+.activeDetail {
+  color: #fff;
+  background: #00a83b;
+  border: 1px solid #00a83b;
+  border-top: none;
+  border: 1px solid white;
+}

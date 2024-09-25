@@ -1,0 +1,59 @@
+@import "../../style/vars.scss";
+.row_event {
+  display: grid;
+  padding: 0 10px;
+  grid-template-columns:
+    5rem 1fr 3.4375rem 3.4375rem 3.4375rem 3.4375rem
+    3.4375rem 3.4375rem 3.4375rem 3.4375rem 3.4375rem;
+  column-gap: 4px;
+  min-height: 60px;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  text-decoration: none;
+  color: $colorText;
+  height: 60px;
+  font-weight: 600;
+  font-size: 17px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  cursor: pointer;
+  .wr_img {
+    background-color: #eaeaea;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 2px;
+    border-radius: 4px;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .green {
+    color: #3da97c;
+  }
+  .borderOpacity {
+    height: 53px;
+    margin-left: 5px;
+    color: #009a2e;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    background: #e8faee;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+  .stakeNumbersCustom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
